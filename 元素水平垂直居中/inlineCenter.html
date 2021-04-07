@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>行内元素垂直水平居中</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .parent1 {
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .parent2 {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 1.单行文本父元素确认高度 -->
+    <div class="parent parent1">
+        <span>单行文本父元素确认高度</span>
+    </div>
+    <!-- 2.多行文本父元素确认高度 -->
+    <div class="parent parent2">
+        <span>多行文本父元素确认高度多行文本父元素确认高度多行文本父元素确认高度</span>
+    </div>
+   
+</body>
+
+</html>
